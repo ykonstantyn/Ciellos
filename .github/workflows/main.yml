@@ -20,7 +20,7 @@ defaults:
 
 jobs:
    CI:
-    runs-on: [ Build ]
+    runs-on: [ ubuntu-latest ]
     name: Gated Build
     steps:
       - name: Support longpaths
