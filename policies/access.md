@@ -6,7 +6,7 @@ satisfies:
     - CC6.2
     - CC6.3
 majorRevisions:
-  - date: Jun 1 2018
+  - date: Jun 1 2023
     comment: Initial document
 ---
 # Purpose and Scope
