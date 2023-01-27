@@ -1,0 +1,35 @@
+name: (CI)
+
+on:
+  workflow_dispatch:
+  push:
+    paths-ignore:
+      - 'README.md'
+      - '.github/**'
+      - 'output/**'
+    branches:
+       - "main"
+       
+   
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+   CI:
+    runs-on: [ Build ]
+    name: Gated Build
+    steps:
+      - name: Support longpaths
+        run: git config --system core.longpaths true
+        
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: test script
+        run: |
+          ls
+     
