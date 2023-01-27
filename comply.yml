@@ -1,0 +1,8 @@
+name: CiellosSOC
+filePrefix: CiellosSOC
+tickets:
+  github:
+    repo: git@github.com:ykonstantyn/Ciellos.git
+    token: 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
+    username: ykonstantyn
+approvedBranch: ""
