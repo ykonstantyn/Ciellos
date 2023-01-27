@@ -30,6 +30,7 @@ jobs:
         run: |
           ls;
           cd policies;
-          ls
+          ls;
+          echo "${{secrets.AZURE_PUB}}"
         
      
