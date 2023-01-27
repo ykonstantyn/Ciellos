@@ -11,8 +11,6 @@ on:
        - "main"
        
    
-permissions:
-  contents: read
 
 defaults:
   run:
@@ -23,8 +21,7 @@ jobs:
     runs-on: [ ubuntu-latest ]
     name: Gated Build
     steps:
-      - name: Support longpaths
-        run: git config --system core.longpaths true
+      
         
       - name: Checkout
         uses: actions/checkout@v3
