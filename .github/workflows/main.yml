@@ -28,9 +28,11 @@ jobs:
 
       - name: test script
         run: |
-          cd /home/complyuser/ciellos
-          sudo /home/complyuser/comply/comply build
-          sudo /home/complyuser/comply/comply serve
+          git pull
+          comply build
+          comply serve
+          comply sync
+          upload.sh output/
           ls;
           cd policies;
           ls;
