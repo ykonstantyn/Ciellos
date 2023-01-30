@@ -29,8 +29,6 @@ jobs:
       - name: test script
         run: |
           git pull
-          comply build
-          comply sync
           upload.sh output/
           ls;
           cd policies;
