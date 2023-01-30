@@ -28,7 +28,7 @@ jobs:
 
       - name: test script
         run: |
-          upload.sh output/
+          git pull
           ls;
           cd policies;
           ls;
