@@ -29,6 +29,7 @@ jobs:
       - name: test script
         run: |
           git pull
+          comply sync
           ls;
           cd policies;
           ls;
