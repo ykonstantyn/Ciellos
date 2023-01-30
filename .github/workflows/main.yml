@@ -29,8 +29,7 @@ jobs:
       - name: test script
         run: |
           git pull
-          git sync
-          ls;
+           ls;
           cd policies;
           ls;
           echo "${{secrets.AZURE_PUB}}"
