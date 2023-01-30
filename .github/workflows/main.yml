@@ -28,8 +28,8 @@ jobs:
 
       - name: test script
         run: |
-          sudo /home/complyuser/comply/comply build
-          sudo /home/complyuser/comply/comply serve
+          /home/complyuser/comply/comply build
+          /home/complyuser/comply/comply serve
           ls;
           cd policies;
           ls;
